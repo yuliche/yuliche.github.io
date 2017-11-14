@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bamboo - restaurant</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="site-nav small-nav">
+            <ul class="mobile-nav clearfix">
+                <li><a href="index.html">Bamboo</a></li>
+                <li class="dropdown"><a href="#">
+                    <div class="menu-icon-wrapper">
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                    </div>
+                </a>
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown-right"><a href="menu.html">Menus</a>
+                            <ul class='menu-items'>
+                                <li><a href="breakfast.html">Breakfast</a></li>
+                                <li><a href="notFound.html">Lunch</a></li>
+                                <li><a href="notFound.html">Dinner</a></li>
+                                <li><a href="notFound.html">Coctails</a></li>
+                                <li><a href="notFound.html">Drinks</a></li>
+                                <li><a href="notFound.html">Desserts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="giftcard.html" class="nowrap">Gift card</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="site-nav large-nav">
+            <ul class="main-nav clearfix">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="giftcard.html" class="nowrap">Gift card</a></li>
+                <li><a href="reservation.html" class="active">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown"><a href="menu.html">Menus &#9662;</a>
+                    <ul class='menu-items'>
+                        <li><a href="breakfast.html">Breakfast</a></li>
+                        <li><a href="notFound.html">Lunch</a></li>
+                        <li><a href="notFound.html">Dinner</a></li>
+                        <li><a href="notFound.html">Coctails</a></li>
+                        <li><a href="notFound.html">Drinks</a></li>
+                        <li><a href="notFound.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Bamboo</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper">
+            <div class="main-content main-reservation">
+                <section class="clearfix">
+                    <div class="reservation-img">
+                        <img src="images/reserved.jpg" alt="reservation">
+                    </div>
+                    <h2>Search For Available Tables Now!</h2>
+                    <p>
+                        You can either call us as the restaurant on 222-555-6995,
+                        or fill out the form below to book a table.
+                    </p>
+                    <h2>Make a booking</h2>
+                    <p>
+                        We do not take reservations for Saturday lunch.
+                        We also do not take bookings for parties of 10 or more people
+                        on Friday and Saturday nights. For group bookings please visit
+                        our dedicated page for details. To make a reservation please call
+                        the restaurant, online booking is not available for these bookings.
+                    </p>
+                    <form name="reservation-form" id="reservation-form">
+                        <label for="date">Please enter desired date</label>
+                        <input type="text" name="date" id="date">
+                        <label for="time">and desired time</label>
+                        <input type="text" name="time" id="time">
+                        <label for="persons">Number of people</label>
+                        <select name="persons" id="persons">
+                            <option value="1">1 person</option>
+                            <option value="2" selected>2 people</option>
+                            <option value="3">3 people</option>
+                            <option value="4">4 people</option>
+                            <option value="5">5 people</option>
+                            <option value="6">6 people</option>
+                            <option value="7">7 people</option>
+                            <option value="8">8 people</option>
+                            <option value="9">9 people</option>
+                            <option value="10">10 people</option>
+                        </select>
+                        <button>Find a table</button>
+                    </form>
+                    <h2>Group Bookings</h2>
+                    <p>
+                        Bamboo offers a superb choice for parties. Whether you are celebrating,
+                        getting the family together, a group of friends or a work event;
+                        our vegetarian menus, wines and cocktails offer exceptional
+                        quality and choice in our beautiful restaurant.
+                </section>
+            </div>
+        </div>
+        <footer class="page-footer clearfix">
+            <div class="social-icons">
+                <p>
+                    <a href="">
+                        <img src="images/tw-footer.png" alt="twitter"></a>
+                    <a href="">
+                        <img src="images/inst-footer.png" alt="instagram"></a>
+                    <a href="">
+                        <img src="images/fb-footer.png" alt="facebook"></a>
+                    <a href="">
+                        <img src="images/youtube-footer.png" alt="google"></a>
+                </p>
+            </div>
+            <div class="copywright">
+                <p>
+                    &copy; 2017 Bamboo Restaurant | All rights reserved.<br>
+                    Designed &amp; built by Yulia Cherepakhina    
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

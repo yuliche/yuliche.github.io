@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bamboo - restaurant</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="site-nav small-nav">
+            <ul class="mobile-nav clearfix">
+                <li><a href="index.html">Bamboo</a></li>
+                <li class="dropdown"><a href="#">
+                    <div class="menu-icon-wrapper">
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                        <div class="menu-icon"></div>
+                    </div>
+                </a>
+                    <ul class="menu-items">
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown-right"><a href="menu.html">Menus</a>
+                            <ul class='menu-items'>
+                                <li><a href="breakfast.html">Breakfast</a></li>
+                                <li><a href="notFound.html">Lunch</a></li>
+                                <li><a href="notFound.html">Dinner</a></li>
+                                <li><a href="notFound.html">Coctails</a></li>
+                                <li><a href="notFound.html">Drinks</a></li>
+                                <li><a href="notFound.html">Desserts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="reservation.html">Reservation</a></li>
+                        <li><a href="giftcard.html" class="nowrap">Gift card</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="career.html">Career</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <nav class="site-nav large-nav">
+            <ul class="main-nav clearfix">
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="career.html">Career</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="giftcard.html" class="nowrap active">Gift card</a></li>
+                <li><a href="reservation.html">Reservation</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="dropdown"><a href="menu.html">Menus &#9662;</a>
+                    <ul class='menu-items'>
+                        <li><a href="breakfast.html">Breakfast</a></li>
+                        <li><a href="notFound.html">Lunch</a></li>
+                        <li><a href="notFound.html">Dinner</a></li>
+                        <li><a href="notFound.html">Coctails</a></li>
+                        <li><a href="notFound.html">Drinks</a></li>
+                        <li><a href="notFound.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Bamboo</a></li>
+            </ul>
+        </nav>
+        <div class="content-wrapper">
+            <div class="main-content main-gift-card">
+                <img src="images/giftCard.png" alt="Gift card">
+                <p>
+                    Simply choose the amount you would like to buy below,
+                    and you will be taken through
+                    to the PayPal secure payment site for payment, but you can pay
+                    by credit/debit card even if you do not have a PayPal account,
+                    where you can add delivery details. We will then send out your gift
+                    card to your requested address within 2-4 working days.<br>
+                    PLEASE NOTE: You will need to provide a separate address for delivery,
+                    if it is different to the billing address. The cards can be redeemed
+                    within 12 months of purchase.
+                </p>
+                <p>
+                    If you need any further details, specific requests or have any questions
+                    please contact us on <span>222-555-6995</span> or email <span>info@Bamboo.com</span>
+                </p>
+                <form action="post" name="gift-form" id="gift-form">
+                    <div class="form-row clearfix">
+                        <div class="form-column">
+                            <label for="email">Your email</label><span class="required">*</span><br>
+                            <input type="email" id="email" required>
+                        </div>
+
+                        <div class="form-column">
+                            <label for="tel">Your phone</label><span class="required">*</span><br>
+                            <input type="tel" id="tel" required>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <legend>Gift Card Information</legend>
+                        <p>From:</p>
+                        <div class="form-row clearfix">
+                            <div class="form-column">
+                                <label for="fnamesender">First Name</label><span class="required">*</span><br>
+                                <input type="text" name="fnamesender" id="fnamesender" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="lastnamesender">Last Name</label><span class="required">*</span><br>
+                                <input type="text" name="lastnamesender" id="lastnamesender" required>
+                            </div>
+                        </div>
+                        <p>To:</p>
+                        <div class="form-row clearfix">
+                            <div class="form-column">
+                                <label for="fnamereceiver">First Name</label><span class="required">*</span><br>
+                                <input type="text" name="fnamereceiver" id="fnamereceiver" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="lastnamereceiver">Last Name</label><span class="required">*</span><br>
+                                <input type="text" name="lastnamereceiver" id="lastnamereceiver" required>
+                            </div>
+                        </div>
+                        <label>Gift card message</label><span class="required">*</span><br>
+                        <textarea name="gift-message" cols="30" rows="5" maxlength="150" required>
+                        </textarea>
+                        <br>
+                        <span>No more than 150 symbols</span>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Delivery Address</legend>
+                        <div class="form-row clearfix">
+                            <div class="form-column">
+                                <label for="address">Address</label><span class="required">*</span><br>
+                                <input type="text" name="address" id="address" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="address">Address Line 2</label><br>
+                                <input type="text" name="address2" id="address2">
+                            </div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="form-column">
+                                <label for="city">City</label><span class="required">*</span><br>
+                                <input type="text" name="city" id="city" required>
+                            </div>
+                            <div class="form-column">
+                                <label for="postcode">Postal Code</label><span class="required">*</span><br>
+                                <input type="text" name="postcode" id="postcode" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <label for="select">Please enter an amount below:</label>
+                                <span class="required">*</span><br>
+                                <select name="select" id="select">
+                                    <option value=""></option>
+                                    <option value="50">50</option>
+                                    <option value="75">75</option>
+                                    <option value="100">100</option>
+                                    <option value="150">150</option>
+                                    <option value="250">250</option>
+                                    <option value="350">350 (basket with fresh fruits is included)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row-checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" checked>
+                            <span>I agree to the terms and conditions</span>
+                        </div>
+                        <button type="submit">Submit&amp;Pay</button>
+                    </fieldset>
+                </form>
+                <div class="gift-card-conditions">
+                    <span>Please see below for full terms and conditions.</span>
+                    <ul>
+                        <li>The Bamboo Gift Card is not a cheque guarantee, credit or charge card.</li>
+                        <li>The minimum amount required to activate the Bamboo Gift Card is 50$</li>
+                        <li>Cards not used for more than 12 months after purchase will expire and
+                            the balance be forfeited.</li>
+                        <li>Bamboo cannot be held responsible for lost, stolen or damaged cards or for any
+                            unused amounts on those cards</li>
+                        <li>The Bamboo Gift Card cannot be redeemed or exchanged for cash or vouchers.
+                            Purchases of gift cards are non-refundable.</li>
+                        <li>For cards purchased online – non-delivery must be notified within 10 days of purchase,
+                            cards reported lost after this time are not the responsibility of Bamboo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="social-icons">
+                <p>
+                    <a href="">
+                        <img src="images/tw-footer.png" alt="twitter"></a>
+                    <a href="">
+                        <img src="images/inst-footer.png" alt="instagram"></a>
+                    <a href="">
+                        <img src="images/fb-footer.png" alt="facebook"></a>
+                    <a href="">
+                        <img src="images/youtube-footer.png" alt="google"></a>
+                </p>
+            </div>
+            <div class="copywright">
+                <p>
+                    &copy; 2017 Bamboo Restaurant | All rights reserved.<br>
+                    Designed &amp; built by Yulia Cherepakhina
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
